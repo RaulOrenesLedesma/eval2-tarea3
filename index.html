@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa + Clima</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script type="module" src="js/weather.js" defer></script>
+    <script type="module" src="js/map.js" defer></script>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="weather-info">
+    <div id="current">
+        <h2>Clima Actual</h2>
+        <div id="weather-data">Cargando ubicación...</div>
+        <p id="coords" style="margin-top:5px; font-size:0.9em;color:#555;">Latitud: --, Longitud: --</p>
+    </div>
+    <div class="chart-container">
+        <canvas id="forecastChart"></canvas>
+    </div>
+</div>
+
+</body>
+</html>
